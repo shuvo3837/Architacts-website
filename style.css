@@ -90,12 +90,12 @@ main{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 40px 200px;
+    padding: 40px 100px;
 }
 
 .features-img{
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 .features-img img{
@@ -107,4 +107,30 @@ main{
 }
 .bright{
     color: coral;
+}
+
+/* responsive media for medium device */
+@media screen and (max-width: 576px) {
+    .container{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .features-img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+/* responsive media for medium device */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .features-img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
