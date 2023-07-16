@@ -111,7 +111,7 @@ main{
 
 /* responsive media for medium device */
 @media screen and (max-width: 576px) {
-    .container, .card-container{
+    .container, .card-container, .sponsors-container{
         flex-direction: column;
         padding: 10px;
         gap: 20px;
@@ -125,7 +125,7 @@ main{
 /* responsive media for medium device */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .container, .card-container{
+    .container, .card-container, .sponsors-container{
         flex-direction: column;
         padding: 10px;
         gap: 20px;
@@ -149,4 +149,14 @@ main{
     border: 2px solid plum;
     text-align: center;
     padding: 20px;
+}
+/* sponsors style */
+.sponsor{
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+.sponsors-container{
+    display: flex;
+    justify-content: space-around;
 }
