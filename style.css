@@ -111,9 +111,10 @@ main{
 
 /* responsive media for medium device */
 @media screen and (max-width: 576px) {
-    .container{
+    .container, .card-container{
         flex-direction: column;
         padding: 10px;
+        gap: 20px;
     }
     .features-img{
         display: grid;
@@ -124,13 +125,28 @@ main{
 /* responsive media for medium device */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .container{
+    .container, .card-container{
         flex-direction: column;
         padding: 10px;
+        gap: 20px;
     }
     .features-img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+}
+
+
+/* facts style */
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+}
+.card{
+    width: 150px;
+    border: 2px solid plum;
+    text-align: center;
+    padding: 20px;
 }
