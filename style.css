@@ -49,7 +49,7 @@ nav > ul{
     border-radius: 8px;
     color: aliceblue;
     cursor: pointer;
-    margin: 32px;
+    margin: 32px 0px;
 }
 
 .banner-img{
@@ -77,4 +77,34 @@ nav > ul{
     .header{
         padding: 20px;
     }
+}
+/* main style */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* features style */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 200px;
+}
+
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+}
+.features-img img{
+    width: 100%;
+}
+
+.gry{
+    color: gray;
+}
+.bright{
+    color: coral;
 }
